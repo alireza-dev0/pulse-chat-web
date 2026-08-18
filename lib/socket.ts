@@ -7,19 +7,18 @@ let socket: Socket | null = null
 function createSocket() {
     const directApiUrl = process.env.NEXT_PUBLIC_API_URL
 
-    // if (directApiUrl) {
-    //     const url = new URL(directApiUrl)
-    //     url.hostname = window.location.hostname
+    if (directApiUrl) {
+        const url = new URL(directApiUrl)
+        url.hostname = window.location.hostname
 
-    //     return io(directApiUrl, {
-    //         withCredentials: true,
-    //         autoConnect: false,
-    //     })
-    // }
+        return io(url.origin, {
+            withCredentials: true,
+            autoConnect: false,
+        })
+    }
 
-    return io(window.location.origin ,{
+    return io({
         path: "/api",
-        transports: ["websocket"],
         withCredentials: true,
         autoConnect: false,
     })

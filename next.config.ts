@@ -10,10 +10,6 @@ const nextConfig: NextConfig = {
                 source: "/api/:path*",
                 destination: `${process.env.API_URL}/:path*`,
             },
-            {
-                source: "/api/socket.io/:path*",
-                destination: `${process.env.API_URL}/socket.io/:path*`,
-            }
         ]
     },
 }
