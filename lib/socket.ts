@@ -18,7 +18,8 @@ function createSocket() {
     // }
 
     return io(window.location.origin ,{
-        path: "/api/socket.io",
+        path: "/api",
+        transports: ["websocket"],
         withCredentials: true,
         autoConnect: false,
     })
