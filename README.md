@@ -1,5 +1,8 @@
 # Pulse Chat — Web
 
+<p align="center">
+  <img src="./images/image.png" width="80%" alt="Pulse Chat" />
+</p>
 Real-time chat frontend for Pulse Chat. Persian (RTL) UI built with Next.js, shadcn/ui, Socket.IO, and cookie-based auth.
 
 **Backend:** [pulse-chat-api](https://github.com/alireza-dev0/pulse-chat-api)
