@@ -17,7 +17,7 @@ function createSocket() {
     //     })
     // }
 
-    return io({
+    return io(window.location.origin ,{
         path: "/api/socket.io",
         withCredentials: true,
         autoConnect: false,
