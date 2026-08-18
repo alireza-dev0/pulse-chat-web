@@ -6,7 +6,7 @@ function Spinner({ className, ...props }: React.ComponentProps<"svg">) {
     return (
         <HugeiconsIcon
             icon={Loading03Icon}
-            strokeWidth={2}
+            strokeWidth={2 as any}
             data-slot="spinner"
             role="status"
             aria-label="Loading"
