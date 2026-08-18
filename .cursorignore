@@ -1,0 +1,12 @@
+# for next js project
+/node_modules
+/dist
+
+.next
+/public
+
+.prettierrc
+.prettierignore
+.eslintrc
+.eslintignore
+.cursorignore

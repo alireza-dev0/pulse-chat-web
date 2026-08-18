@@ -1,0 +1,28 @@
+---
+
+description: Simple frontend rules for Next.js + shadcn
+globs:
+
+* "**/*.tsx"
+* "**/*.ts"
+* "**/*.css"
+  alwaysApply: true
+
+---
+
+# Frontend Rules
+
+* Keep implementations simple and direct. Avoid over-engineering.
+* Use the existing Next.js + shadcn patterns and components.
+* Reuse existing code before creating something new.
+* Do not create abstractions, wrappers, generic components, or utilities without a clear current need.
+* Keep page-specific logic in hooks inside the same page folder.
+* Keep UI components focused on rendering; move non-trivial logic to the page's local hooks.
+* Prefer local state and simple solutions over introducing new architecture.
+* Do not add or install any package without explicit user permission.
+* Do not change dependencies or project configuration without permission.
+* Do not refactor unrelated code while working on a task.
+* Do not make assumptions about requirements or add features that were not requested.
+* Client vs Server Components should be chosen based on simplicity and actual needs. Do not force Server Components when a simpler client-side implementation is more appropriate.
+* When something is ambiguous, prefer the simplest solution consistent with the existing codebase.
+* Optimize for finishing the task cleanly and quickly, not for hypothetical future requirements.
